@@ -157,9 +157,6 @@ while urls_queue:
 			# add visited url link
 			visited_urls.append(url_link)
 
-			# sleep in case of dos
-			sleep(1)
-
 		for res in multiple_responses:
 			try:
 				status, url_link, extracted_urls = res.get(timeout=11)
